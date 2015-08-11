@@ -1,0 +1,391 @@
+@import "../css/vendor/bourbon/app/assets/stylesheets/bourbon";
+@import "../css/vendor/neat/app/assets/stylesheets/neat";
+
+//Color Variables
+
+$colorText: RGBA(43, 35, 1, 1);
+$colorA: RGBA(254, 150, 1, 1);
+$colorB: RGBA(134, 38, 155, 1);
+$colorC: RGBA(115, 175, 182, 1);
+$colorD: RGBA(0, 183, 150, 1);
+
+
+//General Styling
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+//====================================
+//Section 1 - Header
+//====================================
+
+
+// Main View
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.mainView {
+  background-color: black;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
+
+//Header
+
+.firstName {
+  font-size: 30px;
+  position: absolute;
+  color: white;
+  top: 10px;
+  left: 20px;
+}
+
+.lastName {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 35px;
+  left: 20px;
+}
+
+.jTitle {
+  color: white;
+  position: absolute;
+  top: 70px;
+  left: 22px;
+}
+
+
+//Navigation menu
+
+.nav {
+  position: absolute;
+  top: 125px;
+  left: 20px;
+  width: 100px;
+  height: 500px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.navDiv {
+  width: 100px;
+  height: 100px;
+  border: 1px solid $colorText;
+  border-radius: 100%;
+  margin: 15px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.textLayer {
+  width: 100px;
+  height: 100px;
+  background-color: RGBA(94, 97, 94, .8);
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  padding-top: 35px;
+}
+
+.navDiv:hover .textLayer {
+  z-index: 10;
+}
+
+.navDiv .fa-bar-chart {
+  position: absolute;
+  top: 25px;
+  left: 23px;
+}
+
+.navDiv .fa-briefcase {
+  position: absolute;
+  top: 26px;
+  left: 25px;
+}
+
+.navDiv .fa-comment {
+  position: absolute;
+  top: 22px;
+  left: 25px;
+}
+
+.navDiv .fa-phone {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+}
+
+#skillNav .colorLayer {
+    height: 100px;
+    width: 100px;
+    background-color: RGBA(101, 213, 240, 1);
+}
+
+#workNav .colorLayer {
+    height: 100px;
+    width: 100px;
+    background-color: RGBA(177, 30, 73, 1);
+}
+
+#aboutNav .colorLayer {
+    height: 100px;
+    width: 100px;
+    background-color: RGBA(142, 181, 46, 1);
+}
+
+#contactNav .colorLayer {
+    height: 100px;
+    width: 100px;
+    background-color: RGBA(0, 183, 150, 1);
+}
+
+// Highlights Current Page
+
+.activeC {
+  background-color: white !important;
+}
+
+.activeT {
+  z-index: 10;
+}
+
+
+// Taglines
+
+.tagLines {
+  position: absolute;
+  top: 580px;
+  left: 850px;
+  color: white;
+}
+
+.tagLines span {
+  margin: 10px;
+}
+
+.tag1 {
+  color: RGBA(153, 234, 59, 1);
+}
+
+.tagDivider {
+  color: RGBA(94, 203, 236, 1);
+}
+
+.tag2 {
+  color: RGBA(255, 180, 33, 1)
+}
+
+//==================================================
+// Skills Section
+//==================================================
+
+
+.skillsSection {
+  @include span-columns(7);
+  @include shift(3);
+  margin-top: 150px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  border-left: 3px solid RGBA(101, 213, 240, 1);
+  border-radius: 10px;
+}
+
+.skillDesc span {
+  color: white;
+  font-family: 'Monda', sans-serif;
+}
+
+.skillDesc p {
+  color: white;
+  font-family: 'Monda', sans-serif;
+}
+
+.skill {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 0;
+  display: inline;
+  float: left;
+  // background-color: white;
+}
+
+.accordion {
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+}
+
+.accordion span {
+  color: white;
+  font-size: 13px;
+}
+
+.js {
+  cursor: pointer;
+}
+
+.css {
+  background-color: white;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.ajax {
+  background-color: white;
+  padding: 2px;
+}
+
+.resumeLink {
+  text-decoration: none;
+  color: RGBA(101, 213, 240, 1);
+}
+
+.expanded {
+  width: 100%;
+  transition: width 1s ease;
+}
+
+//==================================================
+// Portfolio Section
+//==================================================
+
+.portfolioSection {
+  @include span-columns(8);
+  @include shift(2);
+  margin-top: 150px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  border-left: 3px solid RGBA(177, 30, 73, 1);
+  border-radius: 10px;
+}
+
+
+.portfolioSection p {
+  color: black;
+  font-size: 30px;
+}
+
+.project {
+  @include span-columns(4);
+  background-color: white;
+  border-radius: 10px;
+  height: 500px;
+  text-align: center;
+  border: RGBA(110, 146, 155, 1) 2px solid;
+
+}
+
+.projPic {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: black 2px solid;
+  overflow: hidden;
+  margin: 20px auto 5px auto;
+}
+
+.projPic a img {
+  width: 150px;
+  height: 150px;
+}
+
+.projTitle a {
+  text-decoration: none;
+}
+
+.projTitle a span{
+  color: black;
+  font-size: 30px;
+}
+
+.projTagline span{
+  font-style: italic;
+}
+
+.projDesc p{
+  font-size: 14px;
+}
+
+//==================================================
+// About Section
+//==================================================
+
+.aboutDiv {
+  @include span-columns(6);
+  @include shift(3);
+  margin-top: 150px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  border-left: 3px solid RGBA(142, 181, 46, 1);
+  border-radius: 10px;
+}
+
+.aboutDiv span {
+  color: white;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.aboutDiv p {
+  color: white;
+  margin: 25px;
+}
+
+//==================================================
+// Contact Section
+//==================================================
+
+.contactDiv {
+  @include span-columns(6);
+  @include shift(3);
+  margin-top: 150px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  border-left: 3px solid RGBA(0, 183, 150, 1);
+  border-radius: 10px;
+}
+
+.info i {
+  color: white;
+  margin: 10px;
+}
+
+.info span {
+  color: white;
+}
+
+.contactDiv p {
+  color: white;
+  font-size: 30px;
+}
+
+.contactDiv a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0;
+}
+
+.contactDiv a i {
+  color: white;
+  margin: 20px;
+}

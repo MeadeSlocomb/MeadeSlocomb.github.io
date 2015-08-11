@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meade Slocomb - Front End Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="http://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Monda" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/vendor/normalize.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="container" ng-app="MSPortfolio">
+
+    <div class="mainView">
+
+        <a href="/#/">
+        <div class="title">
+          <span class="firstName">meade</span>
+          <span class="lastName">slocomb</span>
+          <span class="jTitle">front end web developer</span>
+        </div>
+        </a>
+
+
+        <div class="nav" ng-controller="NavController">
+          <a class="skills" href="/#/skills/">
+            <div class="navDiv" id="skillNav">
+              <div ng-class="getCClass('/skills/')" class="colorLayer"></div>
+              <div ng-class="getTClass('/skills/')" class="textLayer">skills</div>
+              <i class="fa fa-3x fa-bar-chart"></i>
+            </div>
+          </a>
+
+          <a href="/#/work/">
+            <div class="navDiv" id="workNav">
+              <div ng-class="getCClass('/work/')" class="colorLayer"></div>
+              <div ng-class="getTClass('/work/')" class="textLayer">my work</div>
+              <i class="fa fa-3x fa-briefcase"></i>
+            </div>
+          </a>
+
+          <a href="/#/about/">
+            <div class="navDiv" id="aboutNav">
+              <div ng-class="getCClass('/about/')" class="colorLayer"></div>
+              <div ng-class="getTClass('/about/')" class="textLayer">about</div>
+              <i class="fa fa-3x fa-comment"></i>
+            </div>
+          </a>
+
+          <a href="/#/contact/">
+            <div class="navDiv" id="contactNav">
+              <div ng-class="getCClass('/contact/')" class="colorLayer"></div>
+              <div ng-class="getTClass('/contact/')" class="textLayer">contact</div>
+              <i class="fa fa-3x fa-phone"></i>
+            </div>
+          </a>
+        </div>
+      <div>
+      <div ui-view></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- VENDOR -->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/underscore.js"></script>
+  <script src="js/vendor/angular.js"></script>
+  <script src="js/vendor/angular-ui-router.js"></script>
+
+
+
+
+  <!-- MAIN -->
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.controller.js"></script>
+  <script src="js/nav.controller.js"></script>
+
+
+</body>
+</html>
