@@ -1,0 +1,20 @@
+@import "../css/vendor/bourbon/app/assets/stylesheets/bourbon";
+@import "../css/vendor/neat/app/assets/stylesheets/neat";
+
+//==================================================
+// Portfolio Section
+//==================================================
+
+.project {
+  @include span-columns(8);
+  @include shift(2);
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  border: RGBA(110, 146, 155, 1) 2px solid;
+  margin-top: 20px;
+}
+
+.projDesc p{
+  padding: 25px;
+}

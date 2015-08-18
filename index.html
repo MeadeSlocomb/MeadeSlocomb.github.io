@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="css/vendor/normalize.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/medium.css" media="(max-width: 1025px)">
+  <link rel="stylesheet" type="text/css" href="css/small.css" media="(max-width: 650px)">
+
 </head>
 <body>
 
@@ -23,13 +26,13 @@
         </div>
         </a>
 
-
         <div class="nav" ng-controller="NavController">
+
           <a class="skills" href="/#/skills/">
             <div class="navDiv" id="skillNav">
               <div ng-class="getCClass('/skills/')" class="colorLayer"></div>
               <div ng-class="getTClass('/skills/')" class="textLayer">skills</div>
-              <i class="fa fa-3x fa-cog"></i>
+              <i class="fa fa-3x fa-bar-chart"></i>
             </div>
           </a>
 
@@ -56,6 +59,7 @@
               <i class="fa fa-3x fa-phone"></i>
             </div>
           </a>
+
         </div>
       <div>
       <div ui-view></div>

@@ -1,0 +1,123 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+.nav {
+  width: 500px;
+  height: 100px; }
+
+.nav a {
+  display: inline-block; }
+
+.navDiv {
+  height: 60px;
+  width: 60px;
+  margin: 8px; }
+
+.navDiv i {
+  font-size: 2em; }
+
+.textLayer {
+  height: 60px;
+  width: 60px;
+  font-size: 12px;
+  padding-top: 23px; }
+
+.navDiv .fa-bar-chart {
+  top: 15px;
+  left: 12px; }
+
+.navDiv .fa-briefcase {
+  top: 15px;
+  left: 13px; }
+
+.navDiv .fa-comment {
+  top: 13px;
+  left: 15px; }
+
+.navDiv .fa-phone {
+  top: 17px;
+  left: 17px; }
+
+.skillsSection {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  margin-top: 220px;
+  padding-left: 10px;
+  padding-top: 20px;
+  border-top: 3px solid RGBA(101, 213, 240, 1);
+  border-left: none; }
+  .skillsSection:last-child {
+    margin-right: 0; }
+
+.skill {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 0;
+  display: inline;
+  float: left; }
+
+.accordion {
+  width: 600px;
+  height: 70px;
+  overflow: hidden; }
+
+.portfolioSection {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  margin-top: 220px;
+  padding-left: 10px;
+  border-left: none;
+  border-top: 3px solid RGBA(177, 30, 73, 1); }
+  .portfolioSection:last-child {
+    margin-right: 0; }
+
+.project {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%; }
+  .project:last-child {
+    margin-right: 0; }
+
+.aboutDiv {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  margin-top: 220px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  border-top: 3px solid RGBA(142, 181, 46, 1);
+  border-left: none; }
+  .aboutDiv:last-child {
+    margin-right: 0; }
+
+.contactDiv {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  margin-top: 220px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  border-top: 3px solid RGBA(0, 183, 150, 1);
+  border-left: none; }
+  .contactDiv:last-child {
+    margin-right: 0; }

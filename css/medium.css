@@ -1,0 +1,24 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+.project {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  border: RGBA(110, 146, 155, 1) 2px solid;
+  margin-top: 20px; }
+  .project:last-child {
+    margin-right: 0; }
+
+.projDesc p {
+  padding: 25px; }

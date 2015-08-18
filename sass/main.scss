@@ -14,6 +14,7 @@ $colorD: RGBA(0, 183, 150, 1);
 
 body {
   font-family: 'Work Sans', sans-serif;
+  background-color: black;
 }
 
 * {
@@ -36,7 +37,7 @@ body {
   background-color: black;
   display: block;
   width: 100%;
-  height: 100vh;
+  height: 750px;
   z-index: 10;
 }
 
@@ -109,7 +110,7 @@ body {
   z-index: 10;
 }
 
-.navDiv .fa-cog {
+.navDiv .fa-bar-chart {
   position: absolute;
   top: 25px;
   left: 23px;
@@ -172,8 +173,8 @@ body {
 
 .tagLines {
   position: absolute;
-  top: 580px;
-  left: 850px;
+  top: 500px;
+  left: 65%;
   color: white;
 }
 
@@ -226,7 +227,6 @@ body {
   padding: 0;
   display: inline;
   float: left;
-  // background-color: white;
 }
 
 .accordion {
@@ -270,7 +270,7 @@ body {
 //==================================================
 
 .portfolioSection {
-  @include span-columns(8);
+  @include span-columns(9);
   @include shift(2);
   margin-top: 150px;
   padding-left: 30px;
@@ -279,20 +279,14 @@ body {
   border-radius: 10px;
 }
 
-
-.portfolioSection p {
-  color: black;
-  font-size: 30px;
-}
-
 .project {
   @include span-columns(4);
   background-color: white;
   border-radius: 10px;
-  height: 500px;
+  margin-top: 20px;
   text-align: center;
   border: RGBA(110, 146, 155, 1) 2px solid;
-
+  overflow: hidden;
 }
 
 .projPic {
@@ -301,7 +295,25 @@ body {
   border-radius: 100%;
   border: black 2px solid;
   overflow: hidden;
-  margin: 20px auto 5px auto;
+  margin: 20px auto 10px auto;
+  position: relative;
+}
+
+.textLayerP {
+  width: 150px;
+  height: 150px;
+  background-color: RGBA(94, 97, 94, .8);
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  padding-top: 60px;
+}
+
+.projPic:hover .textLayerP{
+  z-index: 10;
 }
 
 .projPic a img {
@@ -313,17 +325,65 @@ body {
   text-decoration: none;
 }
 
+.projTitle {
+  margin-bottom: 10px;
+}
+
 .projTitle a span{
   color: black;
   font-size: 30px;
 }
 
-.projTagline span{
-  font-style: italic;
+.projTagline {
+  margin-bottom: 15px;
 }
 
+.projTagline span{
+  font-style: italic;
+  padding-top: 15px;
+}
+
+.divider {
+  width: 80%;
+  height: 1px;
+  border-top: 1px solid black;
+  margin: 0px auto;
+}
 .projDesc p{
   font-size: 14px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.fa-arrow-circle-o-down {
+  font-size: 2em;
+  cursor: pointer;
+  padding: 5px;
+  -moz-transition: all 1s linear;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.fa-arrow-circle-o-down:hover {
+  color: RGBA(177, 30, 73, 1);
+}
+
+.detailSection {
+  height: 0;
+  overflow: hidden;
+  transition: height 1s ease;
+}
+
+.showDetails {
+  height: 200px;
+  transition: height 1s ease;
+}
+
+.fa-rotate-180 {
+  -ms-transform:rotate(-180deg);
+  -moz-transform:rotate(-180deg);
+  -webkit-transform:rotate(-180deg);
+  transform:rotate(-180deg);
 }
 
 //==================================================

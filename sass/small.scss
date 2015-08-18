@@ -1,0 +1,129 @@
+@import "../css/vendor/bourbon/app/assets/stylesheets/bourbon";
+@import "../css/vendor/neat/app/assets/stylesheets/neat";
+
+//======================
+// Nav Section
+//======================
+
+.nav {
+  width: 500px;
+  height: 100px;
+}
+
+.nav a {
+  display: inline-block;
+}
+
+.navDiv {
+  height: 60px;
+  width: 60px;
+  margin: 8px;
+}
+
+.navDiv i {
+  font-size: 2em;
+}
+
+.textLayer {
+  height: 60px;
+  width: 60px;
+  font-size: 12px;
+  padding-top: 23px;
+}
+
+.navDiv .fa-bar-chart {
+  top: 15px;
+  left: 12px;
+}
+
+.navDiv .fa-briefcase {
+  top: 15px;
+  left: 13px;
+}
+
+.navDiv .fa-comment {
+  top: 13px;
+  left: 15px;
+}
+
+.navDiv .fa-phone {
+  top: 17px;
+  left: 17px;
+}
+
+//==================================================
+// Skills Section
+//==================================================
+
+.skillsSection {
+  @include span-columns(10);
+  @include shift(1);
+  margin-top: 220px;
+  padding-left: 10px;
+  padding-top: 20px;
+  border-top: 3px solid RGBA(101, 213, 240, 1);
+  border-left: none;
+}
+
+.skill {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 0;
+  display: inline;
+  float: left;
+}
+
+.accordion {
+  width: 600px;
+  height: 70px;
+  overflow: hidden;
+}
+
+//==================================================
+// Portfolio Section
+//==================================================
+
+.portfolioSection {
+  @include span-columns(10);
+  @include shift(1);
+  margin-top: 220px;
+  padding-left: 10px;
+  border-left: none;
+  border-top: 3px solid RGBA(177, 30, 73, 1);
+}
+
+.project {
+  @include span-columns(10);
+  @include shift(1);
+}
+
+//==================================================
+// About Section
+//==================================================
+
+.aboutDiv {
+  @include span-columns(10);
+  @include shift(1);
+  margin-top: 220px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  border-top: 3px solid RGBA(142, 181, 46, 1);
+  border-left: none;
+}
+
+//==================================================
+// Contact Section
+//==================================================
+
+.contactDiv {
+  @include span-columns(10);
+  @include shift(1);
+  margin-top: 220px;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  border-top: 3px solid RGBA(0, 183, 150, 1);
+  border-left: none;
+}
