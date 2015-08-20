@@ -375,7 +375,7 @@ body {
 }
 
 .showDetails {
-  height: 200px;
+  height: 230px;
   transition: height 1s ease;
 }
 
@@ -434,15 +434,19 @@ body {
   color: white;
 }
 
+.contactLink i {
+  color: white;
+  margin: 10px;
+}
+
+.contactLink span {
+  color: white;
+  text-decoration: none;
+}
+
 .contactDiv p {
   color: white;
   font-size: 30px;
-}
-
-.contactDiv a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 0;
 }
 
 .contactDiv a i {
