@@ -372,7 +372,7 @@ body {
   text-decoration: none;
   display: inline-block;
   padding: 0;
-  font-size: 2em; }
+  margin-left: 0; }
 
 .contactDiv a i {
   color: white;
