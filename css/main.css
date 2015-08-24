@@ -288,6 +288,12 @@ body {
   padding-left: 25px;
   padding-right: 25px; }
 
+.pqDesc {
+  margin-bottom: 95px; }
+
+.fudDesc {
+  margin-bottom: 62px; }
+
 .fa-arrow-circle-o-down {
   font-size: 2em;
   cursor: pointer;
@@ -305,7 +311,7 @@ body {
   transition: height 1s ease; }
 
 .showDetails {
-  height: 200px;
+  height: 240px;
   transition: height 1s ease; }
 
 .fa-rotate-180 {
@@ -365,7 +371,8 @@ body {
 .contactDiv a {
   text-decoration: none;
   display: inline-block;
-  padding: 0; }
+  padding: 0;
+  font-size: 2em; }
 
 .contactDiv a i {
   color: white;
